@@ -1,0 +1,40 @@
+record(ai, "$(P)DOUBLE")
+{
+	field(VAL, 2)
+}
+
+record(ai, "$(P)FLOAT")
+{
+	field(VAL, 2.2)
+}
+
+record(bi, "$(P)BOOL")
+{
+	field(VAL, 0)
+	field(ZNAM, "OFF")
+	field(ONAM, "ON")
+}
+
+record(stringin, "$(P)STR")
+{
+	field(VAL, "test")
+}
+
+record(stringin, "$(P)CHAR")
+{
+	field(VAL, "K")
+}
+
+record(mbbi, "$(P)ENUM")
+{
+	field(VAL, 0)
+	field(ZRVL, "INIT")
+	field(ONVL, "START")
+	field(TWVL, "STOP")	
+}
+
+record(longin, "$(P)LONG")
+{
+	field(VAL, 1.01)
+}
+

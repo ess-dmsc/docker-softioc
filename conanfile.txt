@@ -1,0 +1,3 @@
+[requires]
+epics/3.16.1-4.6.0-dm4@ess-dmsc/stable
+

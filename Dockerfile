@@ -2,7 +2,7 @@ from ubuntu:18.04
 
 RUN apt update && \
     apt -y upgrade && \
-    apt install -y make python-pip && \
+    apt install -y make python-pip g++ && \
     apt autoremove -y && \
     apt clean
 
@@ -18,7 +18,11 @@ ADD "https://raw.githubusercontent.com/ess-dmsc/docker-ubuntu18.04-build-node/ma
 
 COPY conanfile.txt /usr/local/conanfile.txt
 
-RUN conan install /usr/local/
+RUN mkdir /opt/conan/
+
+RUN conan install --build -s compiler=gcc -s compiler.version=7.2 /usr/local/conanfile.txt
+
+ENV PATH $PATH:/root/.conan/data/epics/3.16.1-4.6.0-dm4/ess-dmsc/stable/build/fe0bef86efc52a677c97a3e5e15f8e24bf381fa2/base-3.16.1/bin/linux-x86_64/
 
 ADD IOC /usr/local/IOC
 

@@ -26,4 +26,9 @@ ENV PATH $PATH:/root/.conan/data/epics/3.16.1-4.6.0-dm4/ess-dmsc/stable/build/fe
 
 ADD IOC /usr/local/IOC
 
+EXPOSE 5064 5065
+EXPOSE 5064/udp
 
+RUN cd /usr/local/IOC/ && make
+
+CMD cd /usr/local/IOC/iocBoot/iocSimpleIoc/ && ../../bin/linux-x86_64/SimpleIoc st.cmd

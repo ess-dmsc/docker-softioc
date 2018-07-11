@@ -28,13 +28,16 @@ record(stringin, "$(P)CHAR")
 record(mbbi, "$(P)ENUM")
 {
 	field(VAL, 0)
-	field(ZRVL, "INIT")
-	field(ONVL, "START")
-	field(TWVL, "STOP")	
+	field(ZRVL, 0)
+	field(ONVL, 1)
+	field(TWVL, 2)
+	field(ZRST, "INIT")
+	field(ONST, "START")
+	field(TWST, "STOP")	
 }
 
 record(longin, "$(P)LONG")
 {
-	field(VAL, 1.01)
+	field(VAL, 0)
 }
 

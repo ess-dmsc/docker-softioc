@@ -1,11 +1,11 @@
 record(ai, "$(P)DOUBLE")
 {
-	field(VAL, 2)
+	field(VAL, 0)
 }
 
 record(ai, "$(P)FLOAT")
 {
-	field(VAL, 2.2)
+	field(VAL, 0)
 }
 
 record(bi, "$(P)BOOL")
@@ -20,10 +20,6 @@ record(stringin, "$(P)STR")
 	field(VAL, "test")
 }
 
-record(stringin, "$(P)CHAR")
-{
-	field(VAL, "K")
-}
 
 record(mbbi, "$(P)ENUM")
 {

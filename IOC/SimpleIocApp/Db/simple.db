@@ -37,3 +37,9 @@ record(longin, "$(P)LONG")
 	field(VAL, 0)
 }
 
+record(event, "$(P)USHORT")
+{
+	field(VAL, 0)
+}
+
+

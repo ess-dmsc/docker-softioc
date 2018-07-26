@@ -3,16 +3,14 @@ record(ai, "$(P)DOUBLE")
 	field(VAL, 0)
 }
 
-record(ai, "$(P)FLOAT")
+record(ai, "$(P)DOUBLE2")
 {
 	field(VAL, 0)
 }
 
-record(bi, "$(P)BOOL")
+record(ai, "$(P)FLOAT")
 {
 	field(VAL, 0)
-	field(ZNAM, "OFF")
-	field(ONAM, "ON")
 }
 
 record(stringin, "$(P)STR")

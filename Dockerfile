@@ -2,11 +2,11 @@ from ubuntu:18.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && \
-    apt -y upgrade && \
-    apt install --no-install-recommends -y make python-pip perl g++ && \
-    apt autoremove -y && \
-    apt clean all && \
+RUN apt-get update && \
+    apt-get -y upgrade && \
+    apt-get install --no-install-recommends -y make python-pip perl g++ && \
+    apt-get autoremove -y && \
+    apt-get clean all && \
     rm -rf /var/lib/apt/lists/* && \
     pip install --upgrade pip==9.0.3 && \
     pip install setuptools && pip install conan && \

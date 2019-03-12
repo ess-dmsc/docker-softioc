@@ -34,6 +34,10 @@ SimpleIoc_SRCS_vxWorks += -nil-
 # Finally link to the EPICS Base libraries
 SimpleIoc_LIBS += $(EPICS_BASE_IOC_LIBS)
 
+# Add V4 libraries
+SimpleIoc_LIBS += pvDatabase pvAccess pvData pvaClient nt pvaSrv
+
+
 #===========================
 
 include $(TOP)/configure/RULES

@@ -29,8 +29,18 @@
 # If using the sequencer, point SNCSEQ at its top directory:
 #SNCSEQ = $(MODULES)/seq-ver
 
-EPICS_BASE = /root/.conan/data/epics/3.16.1-4.6.0-dm4/ess-dmsc/stable/build/fe0bef86efc52a677c97a3e5e15f8e24bf381fa2/base-3.16.1
+EPICS4_DIR = /epics/v4/
+PVDATABASE=${EPICS4_DIR}/pvDatabaseCPP/
+PVASRV=${EPICS4_DIR}/pvaSrv/
+PVACCESS=${EPICS4_DIR}/pvAccessCPP/
+PVDATA=${EPICS4_DIR}/pvDataCPP/
+PVCOMMON=${EPICS4_DIR}/pvCommonCPP/
+NORMATIVETYPES=${EPICS4_DIR}/normativeTypesCPP/
+PVACLIENT=${EPICS4_DIR}/pvaClientCPP/
 
+
+EPICS_BASE = /epics/base/
+TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 # Set RULES here if you want to use build rules from somewhere
 # other than EPICS_BASE:
 #RULES = $(MODULES)/build-rules

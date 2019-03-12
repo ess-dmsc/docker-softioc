@@ -1,6 +1,7 @@
 record(ai, "$(P)DOUBLE")
 {
 	field(VAL, 0)
+	field(SCAN, "1 second")
 }
 
 record(ai, "$(P)DOUBLE2")
@@ -11,16 +12,18 @@ record(ai, "$(P)DOUBLE2")
 record(ai, "$(P)FLOAT")
 {
 	field(VAL, 0)
+	field(SCAN, "1 second")
 }
 
 record(stringin, "$(P)STR")
 {
 	field(VAL, "test")
+	field(SCAN, "1 second")
 }
-
 
 record(mbbi, "$(P)ENUM")
 {
+	field(SCAN, "1 second")
 	field(VAL, 0)
 	field(ZRVL, 0)
 	field(ONVL, 1)
@@ -32,11 +35,13 @@ record(mbbi, "$(P)ENUM")
 
 record(longin, "$(P)LONG")
 {
+	field(SCAN, "1 second")
 	field(VAL, 0)
 }
 
 record(event, "$(P)USHORT")
 {
+	field(SCAN, "1 second")
 	field(VAL, 0)
 }
 

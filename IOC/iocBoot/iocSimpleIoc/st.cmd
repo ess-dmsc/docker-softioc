@@ -12,5 +12,7 @@ SimpleIoc_registerRecordDeviceDriver(pdbbase)
 ## Load record instances
 dbLoadRecords("../../db/simple.db","P=SIMPLE:")
 
-iocInit()
+startPVAServer
 
+## Starting IOC
+iocInit()

@@ -45,4 +45,62 @@ record(event, "$(P)USHORT")
 	field(VAL, 0)
 }
 
+record(waveform, "$(P)STRINGARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "STRING")
+}
 
+record(waveform, "$(P)CHARARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "CHAR")
+}
+
+record(waveform, "$(P)UCHARARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "UCHAR")
+}
+
+record(waveform, "$(P)SHORTARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "SHORT")
+}
+
+record(waveform, "$(P)USHORTARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "USHORT")
+}
+
+record(waveform, "$(P)LONGARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "LONG")
+}
+
+record(waveform, "$(P)ULONGARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "ULONG")
+}
+
+record(waveform, "$(P)FLOATARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "FLOAT")
+}
+
+record(waveform, "$(P)DOUBLEARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "DOUBLE")
+}
+
+record(waveform, "$(P)ENUMARRAY") {
+    field(SCAN, "1 second")
+    field(NELM, 100)
+    field(FTVL, "ENUM")
+}

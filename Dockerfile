@@ -26,7 +26,7 @@ RUN apt-get update \
     && make \
     && apt-get remove -y --purge make g++ perl wget
 
-EXPOSE 5064 5065 5064/udp 5075 5076 5075/udp
+EXPOSE 5064 5065 5064/udp 5075 5076 5075/tcp 5076/udp
 
 ENV PATH $PATH:/epics/base/bin/linux-x86_64/:/epics/v4/pvAccessCPP/bin/linux-x86_64/
 

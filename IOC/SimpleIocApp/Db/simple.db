@@ -9,6 +9,19 @@ record(ai, "$(P)DOUBLE2")
 	field(VAL, 0)
 }
 
+record(ai, "$(P)DOUBLE3")
+{
+	field(VAL, 0)
+	field(HIHI,20)
+   	field(HIGH,15)
+    	field(LOW,10)
+    	field(LOLO,5)
+	field(HHSV,"MAJOR")
+    	field(HSV,"MINOR")
+    	field(LSV,"MINOR")
+    	field(LLSV,"MAJOR")
+}
+
 record(ai, "$(P)FLOAT")
 {
 	field(VAL, 0)

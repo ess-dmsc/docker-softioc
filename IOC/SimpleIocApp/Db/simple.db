@@ -1,7 +1,6 @@
 record(ai, "$(P)DOUBLE")
 {
 	field(VAL, 0)
-	field(SCAN, "1 second")
 }
 
 record(ai, "$(P)DOUBLE2")
@@ -25,18 +24,15 @@ record(ai, "$(P)DOUBLE3")
 record(ai, "$(P)FLOAT")
 {
 	field(VAL, 0)
-	field(SCAN, "1 second")
 }
 
 record(stringin, "$(P)STR")
 {
 	field(VAL, "test")
-	field(SCAN, "1 second")
 }
 
 record(mbbi, "$(P)ENUM")
 {
-	field(SCAN, "1 second")
 	field(VAL, 0)
 	field(ZRVL, 0)
 	field(ONVL, 1)
@@ -48,72 +44,61 @@ record(mbbi, "$(P)ENUM")
 
 record(longin, "$(P)LONG")
 {
-	field(SCAN, "1 second")
 	field(VAL, 0)
 }
 
 record(event, "$(P)USHORT")
 {
-	field(SCAN, "1 second")
 	field(VAL, 0)
 }
 
 record(waveform, "$(P)STRINGARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "STRING")
 }
 
 record(waveform, "$(P)CHARARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "CHAR")
 }
 
 record(waveform, "$(P)UCHARARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "UCHAR")
 }
 
 record(waveform, "$(P)SHORTARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "SHORT")
 }
 
 record(waveform, "$(P)USHORTARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "USHORT")
 }
 
 record(waveform, "$(P)LONGARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "LONG")
 }
 
 record(waveform, "$(P)ULONGARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "ULONG")
 }
 
 record(waveform, "$(P)FLOATARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "FLOAT")
+    field(VAL, [1.1, 2.2, 3.3, 4.4, 5.5])
 }
 
 record(waveform, "$(P)DOUBLEARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "DOUBLE")
 }
 
 record(waveform, "$(P)ENUMARRAY") {
-    field(SCAN, "1 second")
-    field(NELM, 100)
+    field(NELM, 5)
     field(FTVL, "ENUM")
 }

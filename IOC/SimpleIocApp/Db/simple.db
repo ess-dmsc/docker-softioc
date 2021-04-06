@@ -90,7 +90,6 @@ record(waveform, "$(P)ULONGARRAY") {
 record(waveform, "$(P)FLOATARRAY") {
     field(NELM, 5)
     field(FTVL, "FLOAT")
-    field(VAL, [1.1, 2.2, 3.3, 4.4, 5.5])
 }
 
 record(waveform, "$(P)DOUBLEARRAY") {

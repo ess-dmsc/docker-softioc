@@ -1,64 +1,64 @@
 record(ai, "$(P)DOUBLE")
 {
-	field(VAL, 0)
+    field(VAL, 0)
 }
 
 record(ai, "$(P)DOUBLE2")
 {
-	field(VAL, 0)
+    field(VAL, 0)
 }
 
 record(ai, "$(P)DOUBLE3")
 {
-	field(VAL, 0)
-	field(HIHI,20)
-   	field(HIGH,15)
-    	field(LOW,10)
-    	field(LOLO,5)
-	field(HHSV,"MAJOR")
-    	field(HSV,"MINOR")
-    	field(LSV,"MINOR")
-    	field(LLSV,"MAJOR")
+    field(VAL, 0)
+    field(HIHI,20)
+    field(HIGH,15)
+    field(LOW,10)
+    field(LOLO,5)
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LSV,"MINOR")
+    field(LLSV,"MAJOR")
 }
 
 record(ai, "$(P)FLOAT")
 {
-	field(VAL, 0)
+    field(VAL, 0)
 }
 
 record(stringin, "$(P)STR")
 {
-	field(VAL, "test")
+    field(VAL, "test")
 }
 
 record(bi, "$(P)BOOL")
 {
-        field(VAL, 0)
-	field(ZNAM, "ZERO")
-	field(ONAM, "ONE")
+    field(VAL, 0)
+    field(ZNAM, "ZERO")
+    field(ONAM, "ONE")
 }
 
 
 
 record(mbbi, "$(P)ENUM")
 {
-	field(VAL, 0)
-	field(ZRVL, 0)
-	field(ONVL, 1)
-	field(TWVL, 2)
-	field(ZRST, "INIT")
-	field(ONST, "START")
-	field(TWST, "STOP")	
+    field(VAL, 0)
+    field(ZRVL, 0)
+    field(ONVL, 1)
+    field(TWVL, 2)
+    field(ZRST, "INIT")
+    field(ONST, "START")
+    field(TWST, "STOP")	
 }
 
 record(longin, "$(P)LONG")
 {
-	field(VAL, 0)
+    field(VAL, 0)
 }
 
 record(event, "$(P)USHORT")
 {
-	field(VAL, 0)
+    field(VAL, 0)
 }
 
 record(waveform, "$(P)STRINGARRAY") {

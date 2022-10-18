@@ -31,6 +31,15 @@ record(stringin, "$(P)STR")
 	field(VAL, "test")
 }
 
+record(bi, "$(P)BOOL")
+{
+        field(VAL, 0)
+	field(ZNAM, "ZERO")
+	field(ONAM, "ONE")
+}
+
+
+
 record(mbbi, "$(P)ENUM")
 {
 	field(VAL, 0)

@@ -38,8 +38,6 @@ record(bi, "$(P)BOOL")
     field(ONAM, "ONE")
 }
 
-
-
 record(mbbi, "$(P)ENUM")
 {
     field(VAL, 0)

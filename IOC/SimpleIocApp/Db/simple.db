@@ -67,12 +67,7 @@ record(waveform, "$(P)STRINGARRAY") {
 
 record(waveform, "$(P)CHARARRAY") {
     field(NELM, 5)
-    field(FTVL, "CHAR")
-}
-
-record(waveform, "$(P)UCHARARRAY") {
-    field(NELM, 5)
-    field(FTVL, "UCHAR")
+    field(FTVL, 1)
 }
 
 record(waveform, "$(P)SHORTARRAY") {
@@ -87,7 +82,7 @@ record(waveform, "$(P)USHORTARRAY") {
 
 record(waveform, "$(P)LONGARRAY") {
     field(NELM, 5)
-    field(FTVL, "LONG")
+    field(FTVL, 7)
 }
 
 record(waveform, "$(P)ULONGARRAY") {
@@ -113,6 +108,6 @@ record(waveform, "$(P)ENUMARRAY") {
 record(aai, "$(P)AAI")
 {
     field(NELM, 5)
-    field(FTVL, "FLOAT")
+    field(FTVL, 7)
 }
 

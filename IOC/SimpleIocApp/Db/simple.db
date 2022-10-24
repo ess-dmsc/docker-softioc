@@ -22,11 +22,6 @@ record(ai, "$(P)DOUBLE3")
     field(EGU,"K")
 }
 
-record(ai, "$(P)FLOAT")
-{
-    field(VAL, 0)
-}
-
 record(stringin, "$(P)STR")
 {
     field(VAL, "test")

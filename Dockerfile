@@ -7,21 +7,11 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get clean all \
     && rm -rf /var/lib/apt/lists/* \
-    && mkdir /epics/ && cd /epics/ \
-    && wget --quiet https://epics.anl.gov/download/base/base-3.16.2.tar.gz -O EPICS.tar.gz \
-    && wget --quiet https://sourceforge.net/projects/epics-pvdata/files/4.6.0/EPICS-CPP-4.6.0.tar.gz -O V4.tar.gz \
-    && tar xzf EPICS.tar.gz \
-    && tar xzf V4.tar.gz \
-    && mv base-*/ base/ \
-    && mv EPICS-CPP* v4/ \
-    && rm EPICS.tar.gz V4.tar.gz \
-    && cd /epics/base \
-    && export EPICS_BASE=/epics/base/ \
-    && export EPICS_HOST_ARCH='linux-x86_64' \
-    && make \
-    && cd /epics/v4/ \
-    && sed -i 's/MODULES += exampleCPP/# MODULES += exampleCPP/g' Makefile \
-    && make \
+    && wget --quiet https://epics.anl.gov/download/base/base-7.0.7.tar.gz \
+    && tar xvzf base-7.0.7.tar.gz \
+    && mkdir /opt/epics \
+    && mv base-7.0.7 /opt/epics/base \
+    && cd /opt/epics/base && make \
     && cd /IOC/ \
     && make \
     && apt-get remove -y --purge make g++ perl wget

@@ -1,4 +1,4 @@
-#!../../bin/darwin-x86/SimpleIoc
+#!../../bin/linux-x86_64/SimpleIoc
 
 #- You may have to change SimpleIoc to something else
 #- everywhere it appears in this file

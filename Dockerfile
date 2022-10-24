@@ -11,6 +11,9 @@ RUN apt-get update \
     && tar xvzf base-7.0.7.tar.gz \
     && mkdir /opt/epics \
     && mv base-7.0.7 /opt/epics/base \
+    && cd /opt/epics/base \
+    && sed -i 's/DIRS += test/# DIRS += test/g' Makefile \
+    && sed -i 's/SUBMODULES += example/# SUBMODULES += example/g' modules/Makefile \
     && cd /opt/epics/base && make \
     && cd /IOC/ \
     && make \
